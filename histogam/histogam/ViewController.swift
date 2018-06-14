@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  柱状图
+//  histogam
 //
-//  Created by 每天农资 on 2018/6/8.
+//  Created by 每天农资 on 2018/6/14.
 //  Copyright © 2018年 我是五高你敢信. All rights reserved.
 //
 
