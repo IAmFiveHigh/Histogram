@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class 商品分析趋势图: UIView {
 

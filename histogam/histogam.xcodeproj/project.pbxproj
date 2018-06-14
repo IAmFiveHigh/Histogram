@@ -15,6 +15,10 @@
 		355D753E20D2671400C6CA91 /* 商品分析趋势图.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355D753B20D2671400C6CA91 /* 商品分析趋势图.swift */; };
 		355D753F20D2671400C6CA91 /* 商品分析趋势图Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355D753C20D2671400C6CA91 /* 商品分析趋势图Cell.swift */; };
 		355D754020D2671400C6CA91 /* 商品分析趋势图json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355D753D20D2671400C6CA91 /* 商品分析趋势图json.swift */; };
+		355D754220D2679F00C6CA91 /* CGFloat+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355D754120D2679F00C6CA91 /* CGFloat+Extension.swift */; };
+		355D754520D267EE00C6CA91 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355D754320D267ED00C6CA91 /* UIColor+Extension.swift */; };
+		355D754620D267EE00C6CA91 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355D754420D267EE00C6CA91 /* UILabel+Extension.swift */; };
+		355D754820D2683200C6CA91 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355D754720D2683100C6CA91 /* UIView+Extension.swift */; };
 		86A60D4EC91AEB7C69EC6E13 /* Pods_histogam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0BAC2C5C5EB663A7B397F19 /* Pods_histogam.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +33,10 @@
 		355D753B20D2671400C6CA91 /* 商品分析趋势图.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "商品分析趋势图.swift"; sourceTree = "<group>"; };
 		355D753C20D2671400C6CA91 /* 商品分析趋势图Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "商品分析趋势图Cell.swift"; sourceTree = "<group>"; };
 		355D753D20D2671400C6CA91 /* 商品分析趋势图json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "商品分析趋势图json.swift"; sourceTree = "<group>"; };
+		355D754120D2679F00C6CA91 /* CGFloat+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extension.swift"; sourceTree = "<group>"; };
+		355D754320D267ED00C6CA91 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		355D754420D267EE00C6CA91 /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		355D754720D2683100C6CA91 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		7325ADF9307C775F428F2D12 /* Pods-histogam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-histogam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-histogam/Pods-histogam.debug.xcconfig"; sourceTree = "<group>"; };
 		AD6036C53FB7DAA21739B76E /* Pods-histogam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-histogam.release.xcconfig"; path = "Pods/Target Support Files/Pods-histogam/Pods-histogam.release.xcconfig"; sourceTree = "<group>"; };
 		F0BAC2C5C5EB663A7B397F19 /* Pods_histogam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_histogam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +89,10 @@
 		355D753A20D2671400C6CA91 /* 分析柱状图 */ = {
 			isa = PBXGroup;
 			children = (
+				355D754720D2683100C6CA91 /* UIView+Extension.swift */,
+				355D754320D267ED00C6CA91 /* UIColor+Extension.swift */,
+				355D754420D267EE00C6CA91 /* UILabel+Extension.swift */,
+				355D754120D2679F00C6CA91 /* CGFloat+Extension.swift */,
 				355D753B20D2671400C6CA91 /* 商品分析趋势图.swift */,
 				355D753C20D2671400C6CA91 /* 商品分析趋势图Cell.swift */,
 				355D753D20D2671400C6CA91 /* 商品分析趋势图json.swift */,
@@ -219,8 +231,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				355D754620D267EE00C6CA91 /* UILabel+Extension.swift in Sources */,
+				355D754520D267EE00C6CA91 /* UIColor+Extension.swift in Sources */,
 				355D753E20D2671400C6CA91 /* 商品分析趋势图.swift in Sources */,
+				355D754820D2683200C6CA91 /* UIView+Extension.swift in Sources */,
 				355D753F20D2671400C6CA91 /* 商品分析趋势图Cell.swift in Sources */,
+				355D754220D2679F00C6CA91 /* CGFloat+Extension.swift in Sources */,
 				355D752B20D266C900C6CA91 /* ViewController.swift in Sources */,
 				355D752920D266C900C6CA91 /* AppDelegate.swift in Sources */,
 				355D754020D2671400C6CA91 /* 商品分析趋势图json.swift in Sources */,
