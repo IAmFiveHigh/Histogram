@@ -9,17 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    private var dataSource = [商品分析趋势每日数据]()
+    
+    private var collectionView: 商品分析趋势图!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        collectionView = 商品分析趋势图(frame: CGRect(x: 0, y: 80, width: screenWidth, height: 90))
+        view.addSubview(collectionView)
+        
+        collectionView.dataSource = dataSource
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
 
 }
 
