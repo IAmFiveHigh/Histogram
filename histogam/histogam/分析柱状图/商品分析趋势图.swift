@@ -11,6 +11,9 @@ import SnapKit
 
 class 商品分析趋势图: UIView {
 
+    private let titleLabel = UILabel()
+
+    
     var dataSource = [商品分析趋势每日数据]() {
         didSet {
             let result = dataSource.reduce(0) { (result, item) -> CGFloat in
@@ -45,7 +48,7 @@ class 商品分析趋势图: UIView {
         layout.minimumInteritemSpacing = 0
         layout.scrollDirection = .horizontal
         
-        let cl = UICollectionView(frame: CGRect(x: 65.scale自适应W, y: 0, width: 300.scale自适应W, height: 90), collectionViewLayout: layout)
+        let cl = UICollectionView(frame: CGRect(x: 65.scale自适应W, y: 0, width: 300.scale自适应W, height: 100.scale自适应H), collectionViewLayout: layout)
         cl.showsVerticalScrollIndicator = false
         cl.showsHorizontalScrollIndicator = true
         cl.backgroundColor = UIColor.white
@@ -74,9 +77,26 @@ class 商品分析趋势图: UIView {
     }
     
     private func setupCollectionView() {
+        
+        titleLabel.setUI(font: 16, textColor: "1A1917")
+        addSubview(titleLabel)
+        
+        titleLabel.snp.makeConstraints { (make) in
+            make.centerX.equalToSuperview()
+            make.top.equalToSuperview()
+            
+        }
+        
         collectionView.register(商品分析趋势图Cell.self, forCellWithReuseIdentifier: 商品分析趋势图CellID)
         
         addSubview(collectionView)
+        
+        collectionView.snp.makeConstraints { (make) in
+            make.left.equalToSuperview().offset(65.scale自适应W)
+            make.top.equalTo(titleLabel.snp.bottom).offset(25.scale自适应H)
+            make.size.equalTo(CGSize(width: 300.scale自适应W, height: 100.scale自适应H))
+            make.bottom.equalToSuperview()
+        }
     }
     
     private func 绘制y坐标() {
@@ -117,6 +137,12 @@ class 商品分析趋势图: UIView {
             make.right.equalTo(y0)
             make.centerY.equalTo(y2.snp.centerY).offset(-20)
         }
+    }
+    
+    func setTitle(_ title: String) {
+
+        titleLabel.text = title
+        
     }
 }
 

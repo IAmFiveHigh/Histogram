@@ -17,10 +17,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-        collectionView = 商品分析趋势图(frame: CGRect(x: 0, y: 80, width: screenWidth, height: 90))
+        collectionView = 商品分析趋势图(frame: CGRect(x: 0, y: 80, width: screenWidth, height: 150.scale自适应H))
         view.addSubview(collectionView)
         
         collectionView.dataSource = dataSource
+        
+        collectionView.setTitle("2018年6月商品分析趋势图")
     }
 
     
